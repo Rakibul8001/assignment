@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'crispy_forms',
     'acc_info'
 ]
 
@@ -130,3 +131,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 SITE_ID = 1
+LOGIN_REDIRECT_URL = '/'
+
+# crispy forms
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
